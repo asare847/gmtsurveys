@@ -40,7 +40,7 @@
                 <span class='icon-bar'></span>
                 <span class='icon-bar'></span>
               </button>
-              <a class='navbar-brand' href='index.html'>
+              <a class='navbar-brand' href='{{ url('/') }}'>
       <img alt="Jednotka" width="220" height="65" src="{{asset('assets/images/me.png')}}" />
               </a>
             </div>
