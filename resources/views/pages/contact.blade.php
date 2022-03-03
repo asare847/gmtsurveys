@@ -12,7 +12,7 @@
                 </h1>
                 <ol class='breadcrumb'>
                   <li>
-                    <a href='index.html'>
+                    <a href='{{ url('/') }}'>
                       <i class='fa fa-home'></i>
                     </a>
                   </li>
