@@ -41,7 +41,7 @@
                 <span class='icon-bar'></span>
               </button>
               <a class='navbar-brand' href='{{ url('/') }}'>
-      <img alt="Jednotka" width="220" height="65" src="{{asset('assets/images/me.png')}}" />
+      <img alt="gmt" width="220" height="65" src="{{asset('assets/images/me.png')}}" />
               </a>
             </div>
             <div class='collapse navbar-collapse navbar-header-collapse'>
@@ -98,7 +98,7 @@
                   &copy;
                   2016 - {{date('Y')}} GMT SURVEYS
           <div style="text-align:right">
-                <img src="{{asset('assets/images/CONTACT.PNG')}}" height="50" width="100">
+                <a href="https://www.gideonasare.net/"><img src="{{asset('assets/images/CONTACT.PNG')}}" height="50" width="100"></a>
         </div>
                 </p>
                 <div class='links'>
