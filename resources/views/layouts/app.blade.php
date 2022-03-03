@@ -11,7 +11,7 @@
   <head>
     <title>GMT | Home</title>
     <meta content='blog, business, clean, multipurpose template, twitter bootstrap 3, responsive' name='keywords'>
-    <meta content='Jednotka is multipurpose Twitter Bootstrap 3 template which is suitable for any type of business or online project. ' name='description'>
+    <meta content='GMT Surveys is a leading s. ' name='description'>
     <meta content='BublinaStudio.com' name='author'>
     <meta content='all' name='robots'>
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -89,28 +89,115 @@
       </header>
       @yield('content')
 
-        <div id='footer-copyright'>
+      <footer id='footer'>
+        <div id='footer-main'>
           <div class='container'>
             <div class='row'>
-              <div class='col-lg-12 clearfix'>
-                <p class='copyright'>
-                  Copyright
-                  &copy;
-                  2016 - {{date('Y')}} GMT SURVEYS
-          <div style="text-align:right">
-                <a href="https://www.gideonasare.net/"><img src="{{asset('assets/images/CONTACT.PNG')}}" height="50" width="100"></a>
-        </div>
-                </p>
-                <div class='links'>
-                  <a class='btn btn-circle btn-medium-light btn-sm' href='#'>
-                    <i class='fa fa-twitter text-dark'></i>
-                  </a>
-                  <a class='btn btn-circle btn-medium-light btn-sm' href='#'>
-                    <i class='fa fa-dribbble text-dark'></i>
-                  </a>
-                  <a class='btn btn-circle btn-medium-light btn-sm' href='#'>
-                    <i class='fa fa-facebook text-dark'></i>
-                  </a>
+              <div class='col-md-3 col-sm-6 info-box'>
+                <h2 class='title'>About us</h2>
+                <p class='no-mg-b'>GMT Surveys is a mordern and dynamic Land and Engineering Surveying Company. Talk to us about your projects.</p>
+              </div>
+              <div class='col-md-3 col-sm-6 info-box'>
+                <h2 class='title'>Contact</h2>
+                <div class='icon-boxes'>
+                  <div class='icon-box'>
+                    <div class='icon icon-wrap'>
+                      <i class='fa fa-map-marker'></i>
+                    </div>
+                    <div class='content'>
+                     inside challenge house,
+                      <br>
+                      Adum Kumasi, Ghana
+                    </div>
+                  </div>
+                  <div class='icon-box'>
+                    <div class='icon icon-wrap'>
+                      <i class='fa fa-phone'></i>
+                    </div>
+                    <div class='content'>
+                      <a href='tel:+233 208140954 /0507713704 '>+233 208140954 / 0507713704 </a>
+                    </div>
+                  </div>
+                  <div class='icon-box'>
+                    <div class='icon icon-wrap'>
+                      <i class='fa fa-envelope'></i>
+                    </div>
+                    <div class='content'><a href="mailto:info@gmtsurveys.com">info@gmtsurveys.com</a></div>
+                  </div>
+                  <div class='icon-box'>
+                    <div class='icon icon-wrap'>
+                      <i class='fa fa-globe'></i>
+                    </div>
+                  <div class='content'><a href="#">www.gmtsurveys.com</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class='col-md-3 col-sm-6 info-box'>
+                <h2 class='title'>Photostream</h2>
+                <ul class='list-unstyled list-inline image-list-box'>
+                  <li>
+                    <a href='#'>
+                      <img alt="Jednotka" width="50" height="50" src="http://placehold.it/50x50" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      <img alt="Jednotka" width="50" height="50" src="http://placehold.it/50x50" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      <img alt="Jednotka" width="50" height="50" src="http://placehold.it/50x50" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      <img alt="Jednotka" width="50" height="50" src="http://placehold.it/50x50" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      <img alt="Jednotka" width="50" height="50" src="http://placehold.it/50x50" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      <img alt="Jednotka" width="50" height="50" src="http://placehold.it/50x50" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class='col-md-3 col-sm-6 info-box social-box'>
+                <h2 class='title'>Latest tweets</h2>
+                <div class='icon-boxes'>
+                  <div class='icon-box'>
+                    <div class='icon icon-wrap'>
+                      <i class='fa fa-twitter text-contrast'></i>
+                    </div>
+                    <div class='content'>
+                      <p>
+                        Phasellus vulputate lobortis sem. Mauris id velit in urna.
+                        <br>
+                        <a class='time' href='#'>
+                          <i>1 hour ago</i>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class='icon-box'>
+                    <div class='icon icon-wrap'>
+                      <i class='fa fa-twitter text-contrast'></i>
+                    </div>
+                    <div class='content'>
+                      <p>
+                        Etiam luctus, dui congue tempus blandit, dui.
+                        <br>
+                        <a class='time' href='#'>
+                          <i>3 hours ago</i>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

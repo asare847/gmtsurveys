@@ -19,7 +19,7 @@
                       <span> Team of Engineers and Planners </span>
                     </p>
                     <p class='fadeInRight animated'>
-                      <a class='btn btn-squared btn-contrast btn-lg' href='#'>
+                      <a class='btn btn-squared btn-contrast btn-lg' href='{{url('/services') }}'>
                         Show more
                       </a>
                     </p>
@@ -42,7 +42,7 @@
                       <span>Construction Survey,<br> Cadastral Survey,<br>Topographical Surveys,<br>Geographic Information System</span>
                     </p>
                     <p class='fadeInRightBig animated'>
-                      <a class='btn btn-squared btn-contrast btn-lg' href='#'>
+                      <a class='btn btn-squared btn-contrast btn-lg' href='{{ url('/services') }}'>
                         Show more
                       </a>
                     </p>
@@ -61,7 +61,7 @@
                       <span>We employ cutting edge technology</span>
                     </p>
                     <p class='fadeInUpBig animated'>
-                      <a class='btn btn-squared btn-contrast btn-lg' href='#'>
+                      <a class='btn btn-squared btn-contrast btn-lg' href='{{ url('/services') }}'>
                         Show more
                       </a>
                     </p>
@@ -235,118 +235,5 @@
           <i class='fa fa-chevron-up'></i>
         </div>
       </div>
-      <footer id='footer'>
-        <div id='footer-main'>
-          <div class='container'>
-            <div class='row'>
-              <div class='col-md-3 col-sm-6 info-box'>
-                <h2 class='title'>About us</h2>
-                <p class='no-mg-b'>GMT Surveys is a mordern and dynamic Land and Engineering Surveying Company. Talk to us about your projects.</p>
-              </div>
-              <div class='col-md-3 col-sm-6 info-box'>
-                <h2 class='title'>Contact</h2>
-                <div class='icon-boxes'>
-                  <div class='icon-box'>
-                    <div class='icon icon-wrap'>
-                      <i class='fa fa-map-marker'></i>
-                    </div>
-                    <div class='content'>
-                     inside challenge house,
-                      <br>
-                      Adum Kumasi, Ghana
-                    </div>
-                  </div>
-                  <div class='icon-box'>
-                    <div class='icon icon-wrap'>
-                      <i class='fa fa-phone'></i>
-                    </div>
-                    <div class='content'>
-                      <a href='tel:+233 208140954 /0507713704 '>+233 208140954 / 0507713704 </a>
-                    </div>
-                  </div>
-                  <div class='icon-box'>
-                    <div class='icon icon-wrap'>
-                      <i class='fa fa-envelope'></i>
-                    </div>
-                    <div class='content'><a href="mailto:info@gmtsurveys.com">info@gmtsurveys.com</a></div>
-                  </div>
-                  <div class='icon-box'>
-                    <div class='icon icon-wrap'>
-                      <i class='fa fa-globe'></i>
-                    </div>
-                  <div class='content'><a href="#">www.gmtsurveys.com</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class='col-md-3 col-sm-6 info-box'>
-                <h2 class='title'>Photostream</h2>
-                <ul class='list-unstyled list-inline image-list-box'>
-                  <li>
-                    <a href='#'>
-                      <img alt="Jednotka" width="50" height="50" src="http://placehold.it/50x50" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#'>
-                      <img alt="Jednotka" width="50" height="50" src="http://placehold.it/50x50" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#'>
-                      <img alt="Jednotka" width="50" height="50" src="http://placehold.it/50x50" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#'>
-                      <img alt="Jednotka" width="50" height="50" src="http://placehold.it/50x50" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#'>
-                      <img alt="Jednotka" width="50" height="50" src="http://placehold.it/50x50" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#'>
-                      <img alt="Jednotka" width="50" height="50" src="http://placehold.it/50x50" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class='col-md-3 col-sm-6 info-box social-box'>
-                <h2 class='title'>Latest tweets</h2>
-                <div class='icon-boxes'>
-                  <div class='icon-box'>
-                    <div class='icon icon-wrap'>
-                      <i class='fa fa-twitter text-contrast'></i>
-                    </div>
-                    <div class='content'>
-                      <p>
-                        Phasellus vulputate lobortis sem. Mauris id velit in urna.
-                        <br>
-                        <a class='time' href='#'>
-                          <i>1 hour ago</i>
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                  <div class='icon-box'>
-                    <div class='icon icon-wrap'>
-                      <i class='fa fa-twitter text-contrast'></i>
-                    </div>
-                    <div class='content'>
-                      <p>
-                        Etiam luctus, dui congue tempus blandit, dui.
-                        <br>
-                        <a class='time' href='#'>
-                          <i>3 hours ago</i>
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+     
 @endsection  
