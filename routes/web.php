@@ -14,23 +14,12 @@ use App\Http\Controllers\PagesController;
 */
 
 
-Route::get('/', function () {
-    return view('index');
-});
-Route::get('/pages', function () {
-    return view('pages.index');
-});
-Route::get('/services', function () {
-    return view('pages.services');
-});
+Route::get('/', [PagesController::class,'index']);
+Route::get('/services', [PagesController::class,'services']);
+Route::get('/about', [PagesController::class,'about']);
+Route::get('/contact', [PagesController::class,'contact']);
 
-Route::get('/about', function () {
-    return view('pages.about');
-});
 
-Route::get('/contact', function () {
-    return view('pages.contact');
-});
 
 Auth::routes();
 

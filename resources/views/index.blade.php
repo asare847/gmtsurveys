@@ -115,6 +115,7 @@
                 </div>
               </div>
             </div>
+            <!-- Creating ProjectsController and making this section dynamic -->
             <div class='row'>
               <div class='col-sm-12'>
                 <div class='page-header page-header-with-icon'>
@@ -164,7 +165,7 @@
                 </div>
               </div>
             </div>
-            
+            <!--End of Projects -->
             <div class='row'>
               <div class='col-sm-12'>
                 <div class='page-header page-header-with-icon'>
