@@ -64,6 +64,15 @@
                   
                 </li>
                 <li class=''>
+                  <a   href='{{ url('projects') }}'>
+                    <span>
+                      Projects
+                    
+                    </span>
+                  </a>
+                  
+                </li>
+                <li class=''>
                   <a    href='{{ url('/about') }}'>
                     <span>
                       About Us
@@ -80,6 +89,15 @@
                   </a>
                 
                 </li>
+                <li class=''>
+                  <a class='' href='{{ url('/contact') }}'>
+                    <span class="btn  ">
+                      Login
+                    </span>
+                  </a>
+                
+                </li>
+                
                 
                 
               </ul>

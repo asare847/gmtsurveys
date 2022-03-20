@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\ProjectController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,14 +14,14 @@ use App\Http\Controllers\PagesController;
 |
 */
 
-
+Route::get('/login2',function(){
+return view('pages.login2');
+});
 Route::get('/', [PagesController::class,'index']);
 Route::get('/services', [PagesController::class,'services']);
 Route::get('/about', [PagesController::class,'about']);
+Route::get('/projects', [PagesController::class,'projects']);
 Route::get('/contact', [PagesController::class,'contact']);
+Route::get('/project/{id}', [PagesController::class,'showProject']);
+Route::get('/test', [ProjectController::class,'index']);
 
-
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

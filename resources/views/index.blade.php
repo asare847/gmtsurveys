@@ -115,6 +115,7 @@
                 </div>
               </div>
             </div>
+            
             <!-- Creating ProjectsController and making this section dynamic -->
             <div class='row'>
               <div class='col-sm-12'>
@@ -126,42 +127,16 @@
                   </h2>
                 </div>
                 <div class='row portfolio-boxes'>
+                  @foreach ( $projects as $project )
                   <div class='col-sm-3 col-xs-6 no-mb-t-xs portfolio-box'>
-                    <a class='image-link' href='services.html'>
+                    <a class='image-link' href=' project/{{$project->id}}'>
                       <i class='fa fa-search'></i>
-                      <img class="img-responsive img-rounded center-block" alt="project in Ashanti Region" width="262" height="262" src="http://placehold.it/262x262" />
+                      <img class="img-responsive img-rounded center-block" width="262" height="262" src="/storage/images/{{$project->image}}" />
                     </a>
-                    <h3 class='title'>Cadastral Survey</h3>
-                    <p class='category'>Cadastral survey of 210 acres of rock concession at Barekese.</p>
+                    <h3 class='title'>{{ $project->name }}</h3>
+                    <p class='category'>{{ $project->location}}</p>
                   </div>
-                  <div class='col-sm-3 col-xs-6 no-mb-t-xs portfolio-box'>
-                    <a class='image-link' href='services.html'>
-                      <i class='fa fa-link'></i>
-                      <img class="img-responsive img-rounded center-block" alt="Northern Mines And Stone Quarry" width="262" height="262" src="http://placehold.it/262x262" />
-                    </a>
-                    <h3 class='title'>Northern Mines And Stone Quarry</h3>
-                    <p class='category'>Cadastral & Topographical survey of  233.5 acres of rock concession at Kona.</p>
-                  </div>
-                  <div class='col-sm-3 col-xs-6 portfolio-box'>
-                    <a href='services.html'>
-                      <div class='image-link'>
-                        <i class='fa fa-search'></i>
-                        <img class="img-responsive img-rounded center-block" alt="Baworo" width="262" height="262" src="http://placehold.it/262x262" />
-                      </div>
-                      <h3 class='title'>Baworo </h3>
-                      <p class='category'>Demarcation and boundary survey of 1300 acres of land belonging to Baworo Stool</p>
-                    </a>
-                  </div>
-                  <div class='col-sm-3 col-xs-6 portfolio-box'>
-                    <a href='services.html'>
-                      <div class='image-link'>
-                        <i class='fa fa-search'></i>
-                        <img class="img-responsive img-rounded center-block" alt="Asokore Mampong" width="262" height="262" src="http://placehold.it/262x262" />
-                      </div>
-                      <h3 class='title'>Asokore Mampong</h3>
-                      <p class='category'>Demarcation of 15 industrial and 160 residential plots and planting pillars along Asokore Mampong and Ayigya boundary.</p>
-                    </a>
-                  </div>
+                  @endforeach
                 </div>
               </div>
             </div>

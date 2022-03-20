@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Project;
-class PagesController extends Controller
+class ProjectController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,29 +14,10 @@ class PagesController extends Controller
     public function index()
     {
         $projects = Project::orderBy('created_at','desc')->take(4)->get();
-        return view('index',compact('projects'));
+        return view('test.index',compact('projects'));
+       // return view('index',compact('projects'));
     }
 
-    public function services()
-    {
-        $projects = Project::all();
-        return view('pages.services',compact('projects'));
-    }
-    
-    public function about()
-    {
-        return view('pages.about');
-    }
-
-    public function contact()
-    {
-        return view('pages.contact');
-    }
-    public function projects()
-    {
-        $projects = Project::all();
-        return view('pages.projects',compact('projects'));
-    }
     /**
      * Show the form for creating a new resource.
      *
@@ -64,11 +45,10 @@ class PagesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function showProject($id)
+    public function show($id)
     {
         $project= Project::findOrFail($id);
-        $relatedprojects = Project::inRandomOrder()->take(12)->get();
-        return view('pages.project')->with(['project'=>$project,'relatedprojects'=>$relatedprojects]);
+        return view('pages.show')->with('project',$project);
     }
 
     /**

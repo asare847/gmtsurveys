@@ -133,9 +133,8 @@
                     
                     <div class='col-sm-12'>
                       
-                  
                     <div class='table-responsive'>
-                      <table class='table table-bordered'>
+                      <table class='table table-striped'>
                         <thead>
                           <tr>
                             <th>
@@ -153,73 +152,21 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr class='warning'>
-                            <td>
-                              Cadastral survey of 210 acres of rock concession at Barekese. 
-                            </td>
-                            <td>
-                              Barekese Ashanti - Ghana
-                            </td>
-                            <td>
-                               Consar Ghana Ltd 
-                            </td>
-                          </tr>
-                          <tr class='info  '>
-                            <td>
-                              Cadastral & Topographical survey of 400 acres of land at Pakyi No.2.
-                            </td>
-                            <td>
-                               Ashanti Region 
-                            </td>
-                            <td>
-                             Energyone Solar Company, Canada 
-                            </td>
-                          </tr>
-                          <tr class='success  '>
-                            <td>
-						Cadastral & Topographical survey of  233.5 acres of rock concession at Kona. 
-                            </td>
-                            <td>
-                             Kona -  Ashanti Region 
-                            </td>
-                            <td>
-							Northern Mines And Stone Quarry
-                            </td>
-                          </tr>
-                          <tr class='  warning'>
-                            <td>
-                              Demarcation and boundary survey of 1300 acres of land belonging to Baworo Stool. 
-                            </td>
-                            <td>
-                              Baworo 
-                            </td>
-                            <td>
-                              Nana Baworo Hene And Elders 
-                            </td>
-                          </tr>
-                          <tr class=' default '>
-                            <td>
-                              Demarcation of 15 industrial and 160 residential plots and planting pillars along Asokore Mampong and Ayigya boundary. 
-                            </td>
-                            <td>
-                               Asokore Mampong , Ashanti Region 
-                            </td>
-                            <td>
-                              Nana Asokore Mampong Hene 
-                            </td>
-                          </tr>
-						  <tr class=' danger '>
-                            <td>
-                             Demarcation and Survey of 500 acres of land at Kwamo. 
-							Approx
-                            </td>
-                            <td>
-                               Kwamo , Ashanti Region 
-                            </td>
-                            <td>
-                              Nana Kwamo Hene 
-                            </td>
-                          </tr>
+                      @foreach ( $projects as $project)
+                      <tr >
+                        <td class='warning'>
+                          {{ $project->name }} 
+                        </td>
+                        <td class="success">
+                          {{ $project->location }}
+                        </td>
+                        <td class="info">
+                           {{ $project->client }} 
+                        </td>
+                      </tr>
+                      @endforeach
+                          
+
                         </tbody>
                       </table>
                     </div>
