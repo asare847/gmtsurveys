@@ -129,7 +129,7 @@
                 <div class='row portfolio-boxes'>
                   @foreach ( $projects as $project )
                   <div class='col-sm-3 col-xs-6 no-mb-t-xs portfolio-box'>
-                    <a class='image-link' href=' project/{{$project->id}}'>
+                    <a class='image-link' href='project/{{$project->id}}'>
                       <i class='fa fa-search'></i>
                       <img class="img-responsive img-rounded center-block" width="262" height="262" src="/storage/images/{{$project->image}}" />
                     </a>
